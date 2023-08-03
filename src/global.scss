@@ -1,0 +1,25 @@
+@import "https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@300&display=swap";
+
+:root {
+  --theme-color: #222831;
+  --subtheme-color: #393e46;
+  --primary-color: #00adb5;
+  --sub-primary-color: #eeeeee;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  font-family: "Oxygen mono", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--subtheme-color) !important;
+}

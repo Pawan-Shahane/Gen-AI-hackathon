@@ -1,0 +1,122 @@
+.summarizeHeader {
+    h2 {
+      color: var(--sub-primary-color) !important;
+      font-size: 1.6rem;
+      margin-block: 0 !important;
+    }
+  }
+  .summary {
+    max-height: 25vw;
+    padding-inline: 0.8rem;
+    overflow-y: scroll;
+  }
+  
+  .summary::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+  .summary::-webkit-scrollbar-track-piece {
+    background: gray;
+  }
+  .summary::-webkit-scrollbar-thumb {
+    background: #3d3d3d;
+  }
+  .summary::-webkit-scrollbar-button {
+    display: none !important;
+  }
+  
+  .summarizeBody {
+    margin-top: 1rem;
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 1rem !important;
+    .input {
+      background-color: #262934 !important;
+      border: 1px solid #474b57 !important;
+    }
+  }
+  
+  .divider {
+    margin: 0.5rem 1vw !important;
+    background-color: #474b57 !important;
+  }
+  
+  .summaryCard {
+    margin: 2rem 0 0 0 !important;
+    font-size: 1rem !important;
+    border-color: #32343d !important;
+    background-color: #262934 !important;
+    color: var(--sub-primary-color) !important;
+  }
+  
+  .audioTranslation {
+    width: 100%;
+  }
+  
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    div {
+      margin-inline: auto;
+    }
+  }
+  
+  .textHeader {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0.5rem 0;
+    justify-content: space-between !important;
+    .saveButton {
+      color: var(--primary-color) !important;
+      background-color: transparent !important;
+      border-color: var(--primary-color) !important;
+    }
+  }
+  
+  .saveModal {
+    h2 {
+      color: var(--sub-primary-color);
+    }
+  }
+  
+  .warn {
+    text-align: center;
+    color: rgb(252, 179, 43);
+    margin-top: 2rem;
+  }
+  
+  .subtitles {
+    margin: 2rem 1rem !important;
+    background-color: #262934 !important;
+    border-color: #32343d !important;
+    color: var(--sub-primary-color) !important;
+  }
+  
+  @media (max-width: 576px) {
+    .summarizeHeader {
+      padding-top: 1rem !important;
+      margin-top: 0.5rem !important;
+      gap: 0.5rem;
+    }
+    .summarizeBody {
+      flex-wrap: wrap;
+      justify-content: flex-start !important;
+      gap: 1rem !important;
+      .input {
+        width: 100% !important;
+      }
+    }
+    .infoContainer {
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+    .summary {
+      max-height: 50vh !important;
+    }
+  }
+  

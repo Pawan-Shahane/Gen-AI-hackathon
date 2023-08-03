@@ -1,0 +1,65 @@
+.summaryCard {
+    margin: 2rem 0 2rem 0 !important;
+    font-size: 1rem !important;
+    border-color: #32343d !important;
+    background-color: #262934 !important;
+    color: var(--sub-primary-color) !important;
+    h2 {
+      margin-top: 1rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+  }
+  .summary {
+    max-height: 25vw;
+    overflow-y: scroll;
+  }
+  .summary::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+  .summary::-webkit-scrollbar-track-piece {
+    background: gray;
+  }
+  .summary::-webkit-scrollbar-thumb {
+    background: #3d3d3d;
+  }
+  .summary::-webkit-scrollbar-button {
+    display: none !important;
+  }
+
+  .urlForm {
+    padding-top: 1rem !important;
+  }
+  .urlInput {
+    background-color: #262934 !important;
+  }
+  
+  .urlSummary {
+    max-height: 44vh !important;
+  }
+  .noURL {
+    h1 {
+      font-size: 1.5rem !important;
+    }
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  @media (max-width: 576px) {
+    .summary {
+      max-height: 50vh !important;
+    }
+    .urlButton {
+      position: absolute !important;
+      top: -0.1rem !important;
+    }
+    .noURL {
+      h1 {
+        font-size: 1.3rem !important;
+        margin-block: 0.5rem;
+      }
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+  }
+  
